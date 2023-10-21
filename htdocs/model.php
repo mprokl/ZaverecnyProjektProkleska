@@ -20,7 +20,7 @@ function getCustomers() {
 
     return $result;
 }
-
+        // data insertion to the databse //
 function insertCustomer($name, $surname, $age, $phoneNumber) {
     $db = getDbConnection();
     $sql = "INSERT INTO customers (name, Surname, age, phone_number) VALUES (?, ?, ?, ?)";
