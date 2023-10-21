@@ -7,7 +7,7 @@ function getDbConnection() {
     }
     return $db;
 }
-
+        // try to connect to the database //
 function getCustomers() {
     $db = getDbConnection();
     $sql = "SELECT * FROM customers";
