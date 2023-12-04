@@ -1,0 +1,14 @@
+Ceníme práci na projektu! 🏆 Prohlédli jsme si kód a máme k němu následující poznámky:
+
+1. Pojmenování identifikátorů - name, age, phone_number je v pořádku s malým písmenem na začátku, ale proč Surname? A titulek stránky "Form Page"...
+2. Dodržení principů SRP a SoC - pokus o MVC poškozený nefukčním řazením jednotlivých částí
+3. Vhodný výběr datových typů - N/A
+4. Formátování kódu - ok, i když v html to ne vždy vychází
+5. Duplicitní kód a nekonečné cykly - stejný kód z index.php se znovu opakuje ve view.php, které je do něj vkládáno. Naplní se $customers, ale nepoužívá (ani nemůže)
+6. Validace vstupních dat - žádná. Možno vložit třeba jméno "<h1 onmouseover='evil()'>Karel</h1>"
+7. Logičnost a složitost - chybné řazení - index.php nejdřív vkládá view, pak obsluhuje post, který se snaží o přesměrování, ale po vypsání html už to nebude fungovat. Nakonec se naplní pole $customers, na které už ale nemá, kdo sáhnout. Pokud by bylo view.php načítáno až na konci, zmizelo z něj připojení k db a kladení dotazu, vypadalo by to (a fungovalo) zřejmě lépe.
+8. Komentáře - nějaké jsou
+9. Celkové hodnocení - Jednoduchá aplikace, kterou sráží pár výše uvedených prohřešků, jinak může posloužit k dalšímu rozšiřování funkcionality.
+
+Doporučujeme případné výtky v kódu opravit, abyste jej mohli pak prezentovat budoucímu zaměstnavateli v co nejlepší kvalitě. Pokud byste potřebovali s čímkoli pomoci, naplánujte si s námi konzultaci, rádi vám poradíme!
+
