@@ -4,7 +4,7 @@ require_once 'view.php';
     // get the data from the form after submission //
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['name'];            
-    $surname = $_POST['Surname'];      
+    $surname = $_POST['surname'];      
     $age = $_POST['age'];
     $phoneNumber = $_POST['phone_number'];
     // insert data into the database //

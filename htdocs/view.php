@@ -11,8 +11,8 @@
 <form action="index.php" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name">
-        <label for="Surname">Surname:</label>
-        <input type="text" id="Surname" name="Surname">
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname">
         <label for="age">Age:</label>
         <input type="number" id="age" name="age">
         <label for="phone_number">Phone Number:</label>
@@ -49,7 +49,7 @@
           <?php while($row = $result->fetch_assoc()): ?>
             <tr>
               <td><?php echo $row["name"]; ?></td>
-              <td><?php echo $row["Surname"]; ?></td>
+              <td><?php echo $row["surname"]; ?></td>
               <td><?php echo $row["age"]; ?></td>
               <td><?php echo $row["phone_number"]; ?></td>
             </tr>

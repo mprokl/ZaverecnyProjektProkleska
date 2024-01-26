@@ -23,7 +23,7 @@ function getCustomers() {
         // data insertion to the databse //
 function insertCustomer($name, $surname, $age, $phoneNumber) {
     $db = getDbConnection();
-    $sql = "INSERT INTO customers (name, Surname, age, phone_number) VALUES (?, ?, ?, ?)";
+    $sql = "INSERT INTO customers (name, surname, age, phone_number) VALUES (?, ?, ?, ?)";
     $stmt = $db->prepare($sql);
     $stmt->bind_param("ssss", $name, $surname, $age, $phoneNumber);
     $stmt->execute();
